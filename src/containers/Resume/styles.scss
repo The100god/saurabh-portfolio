@@ -1,0 +1,137 @@
+.resume{
+    
+    height: 100%;
+    font-family: 'Prata', serif;
+}
+
+.timeLine{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Prata', serif;
+
+    &__education, &__internship{
+        width: 80%;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header-text{
+            display: inline-block;
+            color: var(--green-theme-main-color);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-bottom: 2px solid var(--green-theme-main-color);
+        }
+
+        &__header-text::before,  &__header-text::after{
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 5px;
+            background-color: var(--green-theme-main-color);
+            bottom: -1px;
+        }
+
+        &__header-text::before{
+            left: 0;
+        }
+
+        &__header-text::after{
+            right: 0;
+        }
+
+        &__vartical-timeline-element{
+            padding: 0px 0px 30px 0px;
+
+            &:last-child{
+                padding-bottom:0 ;
+
+            }
+        }
+
+        .vartical-timeline-element-title-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align:center;
+
+            h3,h4{
+                font-size: 19px;
+                line-height: 2;
+                font-weight: 300;
+            }
+            h4{
+                margin-left: 8px;
+                font-weight: 200;
+
+            }
+            .vartical-timeline-element-year{
+                font-weight: 500;
+            }
+        }
+        p.vartical-timeline-element-description{
+           font-size: 18px; 
+           text-align:center;
+           font-weight: 200;
+        }
+        .vertical-timeline-element-content{
+            font-weight: 200;
+            box-shadow: none;
+        }
+    }
+}
+
+@media only screen and (max-width:300px){
+    .timeLine{
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem;
+
+        &__education, &__internship{
+            width: 100%;
+            
+        }
+    .vartical-timeline-element-title-wrapper{
+        text-align:center;
+
+        h3,h4{
+            font-size: 14px;
+            
+
+        }
+        h4{
+            margin-left: 6px;
+            font-weight: 500;
+
+        }
+    }
+    p.vartical-timeline-element-description{
+        font-size: 16px; 
+        text-align:center;
+     }
+}
+}
+
+@media only screen and (min-width:301px) and (max-width:768px) {
+    .timeLine{
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem;
+
+        &__education, &__internship{
+            width: 100%;
+            
+        }
+
+        .vartical-timeline-element-title-wrapper{
+            text-align:center;
+        }
+    }
+}

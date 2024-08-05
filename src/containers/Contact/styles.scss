@@ -1,0 +1,149 @@
+.contact {
+  font-family: "Prata", serif;
+  &__content {
+    padding: 20px;
+
+    &__header-text {
+      color: var(--green-theme-main-color);
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1em;
+      letter-spacing: 0.5px;
+      position: relative;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-bottom: 2px solid var(--green-theme-main-color);
+    }
+
+    &__header-text::before,
+    &__header-text::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 5px;
+      background-color: var(--green-theme-main-color);
+      bottom: -1px;
+    }
+
+    &__header-text::before {
+      left: 0;
+    }
+
+    &__header-text::after {
+      right: 0;
+    }
+
+    &__form {
+      margin-top: 30px;
+
+      &__controlsWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+
+        div {
+          position: relative;
+          background-color: transparent;
+
+          .inputName,
+          .inputEmail,
+          .inputSubject,
+          .inputDescription {
+            width: 80%;
+            border: 2px solid var(--green-theme-main-color);
+            padding: 16px 12px;
+            transition: all 0.5s ease;
+            background-color: transparent;
+            color: var(--green-theme-sub-text-color);
+          }
+
+          .nameLabel,
+          .emailLabel,
+          .subjectLabel,
+          .descriptionLabel {
+            font-weight: 500;
+            position: absolute;
+            top: 7px;
+            left: 12px;
+            transition: all 0.2s ease;
+            color: var(--green-theme-sub-text-color);
+            font-size: 16px;
+          }
+
+          .inputName:focus,
+          .inputEmail:focus,
+          .inputSubject:focus,
+          .inputDescription:focus {
+            outline: none;
+          }
+
+          .inputName:focus + .nameLabel,
+          .inputName:valid + .nameLabel,
+          .inputEmail:focus + .emailLabel,
+          .inputEmail:valid + .emailLabel,
+          .inputSubject:focus + .subjectLabel,
+          .inputSubject:valid + .subjectLabel,
+          .inputDescription:focus + .descriptionLabel,
+          .inputDescription:valid + .descriptionLabel {
+            font-size: 18px;
+            top: -25px;
+            left: 0px;
+          }
+        }
+      }
+
+      button {
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--green-theme-main-color);
+        border: 1.5px solid var(--green-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
+        margin-left: 30px;
+
+        &:hover {
+          color: black;
+          background: var(--green-theme-main-color);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__content__header-text {
+        
+        font-size: 17px;
+        
+      }
+  .contact__content__form {
+    text-align: center;
+
+    &__controlsWrapper {
+      grid-template-columns: repeat(1, 1fr);
+
+      div {
+        .nameLabel,
+        .emailLabel,
+        .subjectLabel,
+        .descriptionLabel {
+          top: 17%;
+          left: 14%;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    button {
+      padding: 10px 11%;
+      font-size: 1.8rem;
+      border-radius: 7px;
+      margin: 0 auto;
+    }
+  }
+}

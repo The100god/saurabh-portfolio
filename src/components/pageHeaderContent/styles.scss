@@ -1,0 +1,41 @@
+.wrapper{
+    display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed var(--green-theme-main-color);
+
+
+    h2{
+        display: flex;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: var(--green-theme-main-color);
+        flex-grow: 1;
+    }
+
+    span{
+        svg{
+            color: var(--green-theme-main-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper{
+        h2{
+            font-size: 26px;
+        }
+
+        span{
+            svg{
+            width: 30px;
+            height: 30px;
+            }
+        }
+    }
+}
