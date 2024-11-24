@@ -10,7 +10,7 @@ import movie from "../../assets/image/movie.png";
 import simons from "../../assets/image/simons.png";
 import result from "../../assets/image/result.png";
 import mywatch from "../../assets/image/mywatch.png";
-import sangeet from "../../assets/image/sangeet.png";
+import sangeet from "../../assets/image/sangeet.jpg";
 import clock from "../../assets/image/clock.png";
 import calculator from "../../assets/image/calculator.png";
 import textConverter from "../../assets/image/textConverter.png";

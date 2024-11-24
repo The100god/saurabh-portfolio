@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <section id="home" className="home">
     
-    <Animate
+    {/* <Animate
         play
         duration={1.5}
         delay={1}
@@ -21,19 +21,19 @@ const Home = () => {
         end={{
           transform: "translateY(0px)",
         }}
-      >
+      > */}
       <div className="home__profilePhoto">
       {/* <Bounce> */}
         <img src={profilePhoto} alt="main" />
       {/* </Bounce> */}
       </div>
-      </Animate>
+      {/* </Animate> */}
       
       <div className="home__text__weapper">
         <h1>
-          Hello, I'm Saurabh Goyal
+          "Hello, I'm Saurabh Goyal
           <br />
-          Front-End Developer.
+          Front-End Developer."
         </h1>
       </div>
 

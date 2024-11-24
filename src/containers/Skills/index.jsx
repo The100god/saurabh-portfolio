@@ -1,10 +1,12 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import { Animate, AnimateKeyframes } from "react-simple-animate";
-import { skillsData } from "./utils";
-import { Line } from "rc-progress";
+// import { Animate, AnimateKeyframes } from "react-simple-animate";
+import { Animate } from "react-simple-animate";
+// import { skillsData } from "./utils";
+// import { Line } from "rc-progress";
 import './styles.scss'
+import RadarChart from "../skillChart";
 
 const Skills = () => {
   return (
@@ -27,8 +29,9 @@ const Skills = () => {
       </Animate>
 
       <div className="skills__contentWrapper">
-        {skillsData.map((item, key) => (
-          <div key={key} className="skills__contentWrapper__data">
+        {/* {skillsData.map((item, key) => ( */}
+          {/* <div key={key} className="skills__contentWrapper__data"> */}
+          <div className="skills__contentWrapper__data">
             <Animate
               play
               duration={1}
@@ -40,7 +43,7 @@ const Skills = () => {
                 transform: "translateY(0px)",
               }}
             >
-              <h3 className="skills__contentWrapper__data__category">
+              {/* <h3 className="skills__contentWrapper__data__category">
                 {item.label}
               </h3>
               <div className="skills__contentWrapper__data__category__data">
@@ -60,13 +63,14 @@ const Skills = () => {
                         trailWidth={"2"}
                         strokeLinecap="square"
                       />
-                    </div>
-                  </AnimateKeyframes>
+                    </div> 
+                 </AnimateKeyframes>
                 ))}
-              </div>
+              </div> */}
+                    <RadarChart/>
             </Animate>
           </div>
-        ))}
+        {/* ))} */}
       </div>
     </section>
   );

@@ -10,7 +10,7 @@
   &__profilePhoto {
     display: flex;
     justify-content: center;
-    animation: jump 1.6s 3 ease;
+    animation: jump 1.6s 1 ease;
     
     img {
       width: 150px;
@@ -70,7 +70,7 @@
 
         &:hover {
           background: var(--green-theme-main-color);
-          color: black;
+          color: #ffffff;
           font-weight: 600;
         }
       }
@@ -117,14 +117,14 @@
     width: 100%;
   }
 }
-@keyframes rotation {
+// @keyframes rotation {
   
-  100%{
-    transform: rotate(360deg);
-  }
+//   100%{
+//     transform: rotate(360deg);
+//   }
 
   
-}
+// }
 @keyframes jump {
 
   0%{

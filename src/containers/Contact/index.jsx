@@ -56,13 +56,13 @@ const Contact = () => {
         }}
       >
         <PageHeaderContent
-          headerText="Contact Me"
+          headerText="Contact"
           icon={<BsInfoCircleFill size={40} />}
         />
       </Animate>
 
       <div className="contact__content">
-        <Animate
+        {/* <Animate
           play
           duration={1}
           delay={0}
@@ -74,7 +74,7 @@ const Contact = () => {
           }}
         >
           <h3 className="contact__content__header-text">Contact Me</h3>
-        </Animate>
+        </Animate> */}
         <Animate
           play
           duration={1}

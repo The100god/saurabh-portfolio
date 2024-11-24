@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');   
 
 :root{
-    --green-theme-background-color : #1d1d1d;
-    --green-theme-main-color : #43DF5A;
+    /* --green-theme-background-color : #1d1d1d; */
+    --green-theme-background-color : #ffffff;
+    /* --green-theme-main-color : #43DF5A;
     --green-theme-sub-text-color : #ffffff;
-    --green-theme-nav-background-color : #181818;
+    --green-theme-nav-background-color : #181818; */
+    --green-theme-main-color : #096509;
+    --green-theme-sub-text-color : #0d0d0d;
+    --green-theme-nav-background-color : #ffffff;
 }
 
 *{

@@ -7,31 +7,31 @@ import "./styles.scss";
 
 const data = [
   {
-    label: "HOME",
+    label: "Home",
     to: "/",
   },
   {
-    label: "ABOUT ME",
+    label: "About Me",
     to: "/About",
   },
   {
-    label: "CERTIFICATES",
+    label: "Certificate",
     to: "/Certificate",
   },
   {
-    label: "PORTFOLIO",
+    label: "Portfolio",
     to: "/Portfolio",
   },
   {
-    label: "RESUME",
+    label: "Resume",
     to: "/Resume",
   },
   {
-    label: "SKILLS",
+    label: "Skills",
     to: "/Skills",
   },
   {
-    label: "CONTACT",
+    label: "Contact",
     to: "/Contact",
   },
 ];

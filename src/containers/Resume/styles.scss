@@ -1,14 +1,17 @@
 .resume{
     
     height: 100%;
-    font-family: 'Prata', serif;
+    font-family: "Oswald", sans-serif;
+    // font-optical-sizing: auto;
+    // font-weight: 400;
 }
 
 .timeLine{
     display: flex;
     width: 100%;
     padding: 20px;
-    font-family: 'Prata', serif;
+    font-family: "Oswald", sans-serif;
+    
 
     &__education, &__internship{
         width: 80%;

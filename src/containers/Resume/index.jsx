@@ -77,14 +77,14 @@ const Resume = () => {
         </div>
         <div className="timeLine__internship">
         <h3 className='timeLine__internship__header-text'>
-            Internship
+        EXperience
           </h3>
           <VerticalTimeline 
           layout={'1-column'}
           lineColor='var(--green-theme-main-color)'
           >
           {
-            resumeData.internship.map((level, key)=>(
+            resumeData.experience.map((level, key)=>(
               <VerticalTimelineElement
               key={key}
               className='timeLine__internship__vartical-timeline-element'
@@ -104,6 +104,9 @@ const Resume = () => {
 
                 <h4 className='vartical-timeline-element-subTitle'>
                   {level.subTitle}
+                </h4>
+                <h4 className='vartical-timeline-element-year'>
+                  {level.year}
                 </h4>
               
               </div>

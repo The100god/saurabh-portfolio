@@ -1,14 +1,18 @@
 .certificate {
-  font-family: "Prata", serif;
+  font-family: "Oswald", sans-serif;
 
   &__content {
     padding: 20px;
     width: 100%;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 
     &__filter {
       display: inline-block;
       margin: 0 auto;
       border-radius: 25px;
+      padding: 4px 4px 1px 4px;
       border: 1px dashed var(--green-theme-main-color);
 
       li {
@@ -25,7 +29,7 @@
         &.active {
           background: var(--green-theme-main-color);
           // color: var(--green-theme-sub-text-color);
-          color: #000000;
+          color: #ffffff;
           font-weight: bold;
           border-radius: 25px;
         }
@@ -34,15 +38,18 @@
 
     &__cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: auto;
       gap: 1rem;
+      
       margin-top: 10px;
 
       &__item {
-        height: 366px;
+        height: 300px;
         cursor: pointer;
         position: relative;
+        border: 2px solid #000000;
+        border-radius: 10px;
 
         &:hover .overlay {
           opacity: 1;
@@ -50,13 +57,16 @@
 
         &__image-wrapper {
           height: 100%;
+          border-radius: 10px;
 
           a {
             height: 100%;
+            border-radius: 10px;
 
             img {
               height: inherit;
               object-fit: cover;
+              border-radius: 10px;
               width: 100%;
             }
           }
@@ -71,6 +81,7 @@
           height: 100%;
           width: 100%;
           opacity: 0;
+          border-radius: 9px;
           transition: 0.5s ease;
           background-color: var(--green-theme-main-color);
 
@@ -82,10 +93,13 @@
             text-align: center;
 
             p {
-              color: #000000;
-              margin: 0;
-              font-size: 4rem;
+              // width: 80%;
+
+              color: #ffffff;
+              margin: auto;
+              font-size: 3.5rem;
               position: relative;
+              // text-wrap:wrap;
               overflow: hidden;
               white-space: nowrap;
               animation: tyingEffect 1s steps(30, end);
@@ -97,8 +111,8 @@
               font-size: 2rem;
               padding: 10px 70px;
               background: transparent;
-              color: #000000;
-              border: 2px solid #000000;
+              color: #ffffff;
+              border: 2px solid #ffffff;
               border-radius: 4px;
               font-weight: 500;
             }

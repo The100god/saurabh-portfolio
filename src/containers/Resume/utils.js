@@ -23,7 +23,20 @@ export const resumeData ={
             description:"Grade: 76.33%",
         },
     ],
-    internship:[
+    experience:[
+        {
+            title:"Paytm Mall",
+            subTitle:"Frontend web Developer",
+            year:"2017 - 2018",
+            description:"Part-time",
+        },
+        {
+            title:"Nordek",
+            subTitle:"Frontend web Developer",
+            year:"2023 - 2024",
+            description:"Internship",
+        },
+        
         // {
         //     title:"National Fertilizer Limited, Nangal",
         //     subTitle:"The Brief Overview Of Ammonia and Urea Plant and There Function",
