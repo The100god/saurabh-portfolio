@@ -12,6 +12,7 @@ import Contact from './containers/Contact';
 import Navbar from './components/navBar';
 // import particles from "./utils.js/particles";
 import Certificate from './containers/Certificate';
+import Footer from './components/footer';
 
 export default function App() {
 
@@ -45,6 +46,8 @@ export default function App() {
         <Route path='/Contact' element={<Contact/>}/>
       </Routes>
       </div>
+
+      <Footer/>
       
     </div>
   );

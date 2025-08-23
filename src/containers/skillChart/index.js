@@ -98,7 +98,7 @@ const RadarChart = () => {
         angleLines: { display: true }, // Display radial lines
         suggestedMin: 0, // Minimum scale value
         suggestedMax: 100, // Maximum scale value
-        grid: { color: "#adff2f" }, // Grid color
+        grid: { color: "#7ecc09ff" }, // Grid color
         pointLabels: {
           color: "#000", // Label text color
           font: { size: 13 }, // Font size

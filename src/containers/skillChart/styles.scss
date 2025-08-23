@@ -19,8 +19,13 @@
 // }
 
 .radar-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 700px;
   max-width: 100%;
+  height: 500px; // changed from height: 100vh
+  padding-bottom: 30px; // prevents collision with footer
 }
 
 @media only screen and (max-width:760px) {

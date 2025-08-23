@@ -1,10 +1,16 @@
 .skills{
     font-family: "Oswald", sans-serif;
+    //  min-height: 100vh; // changed from height: 100vh
+  padding-bottom: 50px; // add bottom spacing
     
     &__contentWrapper{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         padding: 20px;
         gap: 30px;
+        // height: 100%;
 
         &__data{
             // flex: 1;

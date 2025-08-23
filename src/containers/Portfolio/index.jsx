@@ -23,6 +23,18 @@ import { useState } from "react";
 
 const portfolioData = [
   {
+    id: 4,
+    name: "Weather",
+    image: weather,
+    imgLink: "https://my-weather-search-app.netlify.app/",
+  },
+  {
+    id: 4,
+    name: "School",
+    image: school,
+    imgLink: "https://saurabh-school.netlify.app/",
+  },
+  {
     id: 2,
     name: "Dice Game",
     image: dice,
@@ -100,18 +112,7 @@ const portfolioData = [
     image: template,
     imgLink: "https://tasktamplate.netlify.app/",
   },
-  {
-    id: 4,
-    name: "Weather",
-    image: weather,
-    imgLink: "https://my-weather-search-app.netlify.app/",
-  },
-  {
-    id: 4,
-    name: "School",
-    image: school,
-    imgLink: "https://saurabh-school.netlify.app/",
-  },
+  
 
 ];
 
