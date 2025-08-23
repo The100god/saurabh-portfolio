@@ -1,5 +1,6 @@
 .home {
   position: relative;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -99,25 +100,25 @@
 
 @media only screen and (max-width: 376px) {
   .home__text__weapper h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 5rem;
   }
 }
 @media only screen and (min-width: 377px) and (max-width: 550px) {
   .home__text__weapper h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     line-height: 6rem;
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 768px) {
   .home__text__weapper h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 8rem;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 990px) {
   .home__text__weapper h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     line-height: 9rem;
   }
 }
