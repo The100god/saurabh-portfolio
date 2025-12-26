@@ -17,11 +17,25 @@ import textConverter from "../../assets/image/textConverter.png";
 import template from "../../assets/image/template.png";
 import weather from "../../assets/image/weather.png";
 import school from "../../assets/image/school.png";
+import chugli from "../../assets/image/chugli.png";
+import greenlay from "../../assets/image/greenlay.png";
 import "./styles.scss";
 import { useState } from "react";
 
 
 const portfolioData = [
+  {
+    id: 4,
+    name: "Chugli Chat App",
+    image: chugli,
+    imgLink: "https://chugli-kro.netlify.app/",
+  },
+  {
+    id: 4,
+    name: "Greenlay Solar India",
+    image: greenlay,
+    imgLink: "https://greenlay-solar-india.netlify.app/",
+  },
   {
     id: 4,
     name: "Weather",
