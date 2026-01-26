@@ -36,7 +36,7 @@ const personalDetails = [
 ];
 
 const jobSummary =
-  "Fresher in experience and an Front End Developer with Knowledge of HTML, CSS, JavaScript, Reactjs, React-Three-Fiber, NextJs, NodeJS, and Python Programming language.";
+  "Frontend Developer building modern, interactive, and performance-driven web applications with React and Next.js. Proficient in HTML, CSS, JavaScript, and responsive design principles to create seamless user experiences across devices. Skilled in collaborating with cross-functional teams to deliver high-quality software solutions. Passionate about staying updated with the latest industry trends and continuously improving development skills.";
 
 const About = () => {
   return (
