@@ -19,6 +19,7 @@ import weather from "../../assets/image/weather.png";
 import school from "../../assets/image/school.png";
 import chugli from "../../assets/image/chugli.png";
 import greenlay from "../../assets/image/greenlay.png";
+import talkingFile from "../../assets/image/talkingFile.png";
 import "./styles.scss";
 import { useState } from "react";
 
@@ -35,6 +36,12 @@ const portfolioData = [
     name: "Greenlay Solar India",
     image: greenlay,
     imgLink: "https://greenlay-solar-india.netlify.app/",
+  },
+  {
+    id: 4,
+    name: "Talking File",
+    image: talkingFile,
+    imgLink: "https://talking-file.netlify.app/",
   },
   {
     id: 4,

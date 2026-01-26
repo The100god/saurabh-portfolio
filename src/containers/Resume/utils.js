@@ -25,17 +25,17 @@ export const resumeData ={
     ],
     experience:[
         {
-            title:"Paytm Mall",
+            title:"Freelance",
             subTitle:"Frontend web Developer",
-            year:"2017 - 2018",
-            description:"Part-time",
+            year:"2023 - till now",
+            description:"freelancing projects",
         },
-        {
-            title:"Nordek",
-            subTitle:"Frontend web Developer",
-            year:"2023 - 2024",
-            description:"Internship",
-        },
+        // {
+        //     title:"Nordek",
+        //     subTitle:"Frontend web Developer",
+        //     year:"2023 - 2024",
+        //     description:"Internship",
+        // },
         
         // {
         //     title:"National Fertilizer Limited, Nangal",

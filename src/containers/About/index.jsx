@@ -11,7 +11,7 @@ const personalDetails = [
   },
   {
     label: "Age :",
-    value: "23",
+    value: "25",
   },
   {
     label: "Address :",
@@ -20,6 +20,14 @@ const personalDetails = [
   {
     label: "Email :",
     value: "saurabhgoyal8055@gmail.com",
+  },
+  {
+    label: "Linkedin :",
+    value: "https://www.linkedin.com/in/saurabh-goyal-9311b2216/",
+  },
+  {
+    label: "GitHub :",
+    value: "https://github.com/the100god",
   },
   {
     label: "Contact No :",
@@ -88,7 +96,18 @@ const About = () => {
                   className="about__personal__information__list__item"
                 >
                   <span className="title">{item.label} </span>
-                  <span className="value">{item.value}</span>
+                  {
+                    item.value.includes("http") ? (
+                      <a
+                        href={item.value}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="value"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                  <span className="value">{item.value}</span>)}
                 </li>
               ))}
             </ul>
