@@ -102,7 +102,7 @@ const About = () => {
                         href={item.value}
                         target="_blank"
                         rel="noreferrer"
-                        className="value"
+                        className="valueLink"
                       >
                         {item.value}
                       </a>
