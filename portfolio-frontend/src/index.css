@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');   
+
+:root{
+    /* --green-theme-background-color : #1d1d1d; */
+    --green-theme-background-color : white;
+    /* --green-theme-background-color : linear-gradient(100deg, #ccd4f6 0%,#f6d4fa 50%, #cfafee 100%); */
+    /* --green-theme-main-color : #43DF5A;
+    --green-theme-sub-text-color : #ffffff;
+    --green-theme-nav-background-color : #181818; */
+    --green-theme-main-color : #000;
+    --green-theme-sub-text-color : #0d0d0d;
+    --green-theme-nav-background-color : linear-gradient(185deg, #ccd4f6 0%,#f6d4fa 50%, #cfafee 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    background: var(--green-theme-background-color);
+    height: 100%;
+}
+
+#root{
+    height: 100%;
+}

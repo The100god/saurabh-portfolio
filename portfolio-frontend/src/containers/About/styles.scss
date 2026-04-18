@@ -1,0 +1,81 @@
+.about{
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+  // font-optical-sizing: auto;
+//   font-weight: 400;
+  font-style: normal;
+
+    &__content{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        font-family: "Oswald", sans-serif;
+  // font-optical-sizing: auto;
+//   font-weight: 300;
+  font-style: normal;
+
+        &__personalWrapper{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+
+        
+            h3{
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--green-theme-main-color);
+            }
+
+            h3.personalInformationHeaderText{
+                padding-top: 20px;
+            }
+
+            p{
+                color:var(--green-theme-sub-text-color);
+                font-size: 2rem;
+                // line-height: 1.65;
+                font-weight: 200;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed var(--green-theme-main-color);
+            }
+
+            ul > li{
+                line-height: 2rem;
+                margin-bottom: 15px;
+                // font-family: 'Prata', cursive;
+                font-weight: 200;
+
+
+                span.title, span.value, a.valueLink{
+                    font-size: 18px;
+                    font-weight: 300;
+                    letter-spacing: 0.5px;
+                    border-bottom: 2px solid var(--green-theme-main-color);
+                    color: var(--green-theme-sub-text-color);
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 16px;
+                    padding-bottom: 5px;
+                }
+
+                span.value{
+                    border: none;
+                   
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about__content{
+        flex-direction: column;
+
+        &__personalWrapper{
+            
+            width: 100%;
+        }
+    }
+}
