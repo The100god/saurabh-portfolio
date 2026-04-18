@@ -1,44 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
+import { DataContext } from "../../context/DataContext";
 import "./styles.scss";
 
-const personalDetails = [
-  {
-    label: "Name :",
-    value: "Saurabh Goyal",
-  },
-  {
-    label: "Age :",
-    value: "25",
-  },
-  {
-    label: "Address :",
-    value: "Jodhpur, Rajasthan",
-  },
-  {
-    label: "Email :",
-    value: "saurabhgoyal8055@gmail.com",
-  },
-  {
-    label: "Linkedin :",
-    value: "https://www.linkedin.com/in/saurabh-goyal-9311b2216/",
-  },
-  {
-    label: "GitHub :",
-    value: "https://github.com/the100god",
-  },
-  {
-    label: "Contact No :",
-    value: "+91-8302443507",
-  },
-];
-
-const jobSummary =
-  "Frontend Developer building modern, interactive, and performance-driven web applications with React and Next.js. Proficient in HTML, CSS, JavaScript, and responsive design principles to create seamless user experiences across devices. Skilled in collaborating with cross-functional teams to deliver high-quality software solutions. Passionate about staying updated with the latest industry trends and continuously improving development skills.";
-
 const About = () => {
+  const { data } = useContext(DataContext);
+  const { personalInfo } = data;
+
+  const personalDetails = [
+    {
+      label: "Name :",
+      value: personalInfo.name,
+    },
+    {
+      label: "Age :",
+      value: personalInfo.age,
+    },
+    {
+      label: "Address :",
+      value: personalInfo.address,
+    },
+    {
+      label: "Email :",
+      value: personalInfo.email,
+    },
+    {
+      label: "Linkedin :",
+      value: personalInfo.linkedin,
+    },
+    {
+      label: "GitHub :",
+      value: personalInfo.github,
+    },
+    {
+      label: "Contact No :",
+      value: personalInfo.phone,
+    },
+  ];
+
   return (
     <section id="about" className="about">
       <Animate
@@ -71,8 +72,8 @@ const About = () => {
               transform: "translateX(0px)",
             }}
           >
-            <h3>Front End Developer</h3>
-            <p>{jobSummary}</p>
+            <h3>{personalInfo.role}</h3>
+            <p>{personalInfo.summary}</p>
           </Animate>
 
           <Animate

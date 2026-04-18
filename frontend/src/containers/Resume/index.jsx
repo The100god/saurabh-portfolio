@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PageHeaderContent from '../../components/pageHeaderContent';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import { Animate } from "react-simple-animate";
@@ -8,8 +8,12 @@ import './styles.scss';
 import 'react-vertical-timeline-component/style.min.css';
 import {MdWork} from 'react-icons/md'
 import {MdSchool} from 'react-icons/md'
+import { DataContext } from '../../context/DataContext';
 
 const Resume = () => {
+  const { data } = useContext(DataContext);
+
+  console.log('data experience', data);
   return (
     <section id='resume' className='resume'>
     <Animate
@@ -84,7 +88,7 @@ const Resume = () => {
           lineColor='var(--green-theme-main-color)'
           >
           {
-            resumeData.experience.map((level, key)=>(
+            data?.experience.map((level, key)=>(
               <VerticalTimelineElement
               key={key}
               className='timeLine__internship__vartical-timeline-element'
@@ -99,14 +103,14 @@ const Resume = () => {
               >
               <div className="vartical-timeline-element-title-wrapper">
                 <h3 className='vartical-timeline-element-title'>
-                  {level.title}
+                  {level.company}
                 </h3>
 
                 <h4 className='vartical-timeline-element-subTitle'>
-                  {level.subTitle}
+                  {level.position}
                 </h4>
                 <h4 className='vartical-timeline-element-year'>
-                  {level.year}
+                  {level.duration}
                 </h4>
               
               </div>

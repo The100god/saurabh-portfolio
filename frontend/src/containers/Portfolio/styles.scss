@@ -63,12 +63,34 @@
           a {
             height: 100%;
             border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
               height: inherit;
               object-fit: cover;
               width: 100%;
               border-radius: 10px;
+            }
+          }
+
+          .portfolio__placeholder {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(135deg, #ccd4f6, #f6d4fa, #cfafee);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+
+            span {
+              font-size: 1.8rem;
+              font-weight: 600;
+              color: var(--green-theme-main-color);
+              word-break: break-word;
             }
           }
         }
@@ -115,6 +137,74 @@
               font-weight: 500;
             }
           }
+        }
+      }
+    }
+
+    &__certificates {
+      margin-top: 4rem;
+
+      h2 {
+        font-size: 2.4rem;
+        color: var(--green-theme-main-color);
+        margin-bottom: 1.5rem;
+      }
+
+      &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+
+        &__item {
+          background: white;
+          border: 2px solid var(--green-theme-main-color);
+          border-radius: 12px;
+          overflow: hidden;
+          text-align: center;
+
+          img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+          }
+
+          .portfolio__certificate-meta {
+            padding: 16px;
+
+            h3 {
+              margin: 0;
+              font-size: 1.6rem;
+              color: var(--green-theme-main-color);
+            }
+
+            p {
+              margin: 8px 0;
+              color: #444;
+              font-size: 1.2rem;
+            }
+
+            a {
+              color: var(--green-theme-main-color);
+              text-decoration: none;
+              font-weight: 700;
+              border-bottom: 1px solid transparent;
+
+              &:hover {
+                border-bottom: 1px solid var(--green-theme-main-color);
+              }
+            }
+          }
+        }
+
+        .portfolio__certificate-placeholder {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 220px;
+          background: linear-gradient(135deg, #ccd4f6, #f6d4fa, #cfafee);
+          color: var(--green-theme-main-color);
+          font-size: 1.4rem;
+          padding: 20px;
         }
       }
     }
